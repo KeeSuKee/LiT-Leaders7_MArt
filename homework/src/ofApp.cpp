@@ -29,20 +29,20 @@ void ofApp::draw(){
    }
     
     
-        
+
     
     float triX = mouseX - cx/2;
     float triY = mouseY - cy/2;
-    float mouseAngle = double (atan2(double (-triY), double (triX)));
+    //float mouseAngle = double (atan2(double (-triY), double (triX)));
     float mouseAngle2 = double (atan2(double (triY), double (-triX)));
-    float angle =(mouseAngle * 180)/PI;
+    //float angle =(mouseAngle * 180)/PI;
     float angle2 =((mouseAngle2 * 180)/PI)+180;
-    float degrees = angle * 254/360;
+    //float degrees = angle * 254/360;
     float degrees2 = angle2 * 254/360;
 
     
     ofColor color;
-    color.setHsb(degrees,255,255);
+    //color.setHsb(degrees,255,255);
     color.setHsb(degrees2,255,255);
     ofSetColor(color);
 
